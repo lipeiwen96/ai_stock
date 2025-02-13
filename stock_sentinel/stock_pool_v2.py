@@ -39,15 +39,15 @@ class StockPool:
         self.start_date = start_date
         self.now_date = f"{now_date[:4]}-{now_date[4:6]}-{now_date[6:8]}"
 
-    def create_random_pool(self, stock_num: int = 10, max_plot_num: int = 3):
-        plot_num = 0
-        stock_list = get_random_stock_code_and_name_list(stock_num=stock_num)
-        for stock in stock_list:
-            if plot_num < max_plot_num:
-                self.add_stock(stock[0], stock[1])
-                plot_num += 1
-            else:
-                self.add_stock(stock[0], stock[1])
+    # def create_random_pool(self, stock_num: int = 10, max_plot_num: int = 3):
+    #     plot_num = 0
+    #     stock_list = get_random_stock_code_and_name_list(stock_num=stock_num)
+    #     for stock in stock_list:
+    #         if plot_num < max_plot_num:
+    #             self.add_stock(stock[0], stock[1])
+    #             plot_num += 1
+    #         else:
+    #             self.add_stock(stock[0], stock[1])
 
     def using_csv_pool(self, file_path: str, sheet_name: str = "Sheet1", code_id: int = 0, name_id: int = 1):
         """
