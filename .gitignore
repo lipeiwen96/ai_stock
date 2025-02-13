@@ -1,0 +1,34 @@
+# 忽略整个 files 目录
+files/
+files/*
+temp/
+
+# 忽略配置文件
+config.py
+
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# IDE 相关
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 数据文件
+data/
+*.pkl 
